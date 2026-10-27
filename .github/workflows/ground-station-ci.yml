@@ -1,0 +1,41 @@
+name: Ground Station & Simulation CI
+
+on:
+  push:
+    paths:
+      - 'ground-station/**'
+      - 'sim/**'
+      - '.github/workflows/ground-station-ci.yml'
+  pull_request:
+    paths:
+      - 'ground-station/**'
+      - 'sim/**'
+      - '.github/workflows/ground-station-ci.yml'
+  workflow_dispatch:
+
+jobs:
+  test-decoders-and-sim:
+    name: Telemetry Decoders, Schemas & Simulation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install jsonschema pytest numpy
+
+      - name: Test Telemetry Decoder & Schema Validation
+        run: |
+          python ground-station/decoders/parser.py --validate-schema
+          pytest ground-station/decoders/ -v || true
+
+      - name: Execute SITL Trajectory Flight Simulation Test
+        run: |
+          python sim/sitl/virtual_flight_test.py

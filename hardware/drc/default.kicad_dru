@@ -1,0 +1,34 @@
+(version 1)
+# ==============================================================================
+# Astro at Baylor - Avionics Rev B Custom Design Rules
+# Rules targeted for 4-layer JLC04161H / standard precision PCB manufacturing
+# ==============================================================================
+
+# Minimum global electrical clearance (0.15 mm / ~6 mil)
+(rule "Global Minimum Clearance"
+   (constraint clearance (min 0.15mm)))
+
+# Pyro firing high-current / battery rails (PYRO_VCC, VBAT, SQUIB_DROGUE, SQUIB_MAIN)
+(rule "Pyro Channel High Clearance"
+   (condition "A.hasNet('PYRO_VCC', 'VBAT', 'PYRO_ARMED', 'SQUIB_DROGUE', 'SQUIB_MAIN')")
+   (constraint clearance (min 0.35mm)))
+
+# Pyro firing high-current trace width constraint
+(rule "Pyro Trace Width"
+   (condition "A.hasNet('PYRO_VCC', 'PYRO_ARMED', 'SQUIB_DROGUE', 'SQUIB_MAIN')")
+   (constraint track_width (min 0.8mm)))
+
+# RF 50-ohm Coplanar Waveguide keepout and clearance
+(rule "RF 50 Ohm Trace Keepout"
+   (condition "A.hasNet('RF_ANT_915')")
+   (constraint clearance (min 0.40mm)))
+
+# Annular ring / Via drill constraints
+(rule "Via Dimensions"
+   (constraint via_diameter (min 0.50mm))
+   (constraint hole (min 0.30mm)))
+
+# Microcontroller fine pitch clearance exemption for 0.5mm pitch LQFP-64 / QFN packages
+(rule "MCU Fine Pitch Pad Clearance"
+   (condition "A.insideCourtyard('U1') || B.insideCourtyard('U1')")
+   (constraint clearance (min 0.125mm)))

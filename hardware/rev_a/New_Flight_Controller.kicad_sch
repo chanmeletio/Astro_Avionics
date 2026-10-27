@@ -1,0 +1,297 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "c787a569-7e50-4dbe-83a3-a95ad3a28bb8")
+	(paper "USLetter")
+	(title_block
+		(title "IREC 2027 SRAD Avionics")
+		(date "2026-10-06")
+		(rev "1.5")
+		(company "Astro at Baylor")
+		(comment 1 "Designed By: James Flynn")
+	)
+	(lib_symbols)
+	(sheet
+		(at 44.45 36.83)
+		(size 34.29 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "4f2515aa-096a-4cbb-ba25-0add5cb186de")
+		(property "Sheetname" "MCU"
+			(at 44.45 36.1184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu_1.kicad_sch"
+			(at 44.45 57.7346 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "New_Flight_Controller"
+				(path "/c787a569-7e50-4dbe-83a3-a95ad3a28bb8"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 194.31 95.25)
+		(size 62.23 36.83)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "59c80b26-bf54-4184-9c27-c34e46cf1fd7")
+		(property "Sheetname" "Power"
+			(at 194.31 94.5384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 194.31 132.6646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "New_Flight_Controller"
+				(path "/c787a569-7e50-4dbe-83a3-a95ad3a28bb8"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 36.83 104.14)
+		(size 35.56 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "70a20c82-d755-4b80-af40-6dfa6b29cfda")
+		(property "Sheetname" "microsd_and_USB"
+			(at 36.83 103.4284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "microsd.kicad_sch"
+			(at 36.83 131.3946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "New_Flight_Controller"
+				(path "/c787a569-7e50-4dbe-83a3-a95ad3a28bb8"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 104.14 38.1)
+		(size 38.1 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "b1e75910-6206-40c4-b0cb-ddbee37b9a40")
+		(property "Sheetname" "Sensors"
+			(at 104.14 37.3884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sensors.kicad_sch"
+			(at 104.14 61.5446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "New_Flight_Controller"
+				(path "/c787a569-7e50-4dbe-83a3-a95ad3a28bb8"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 212.09 45.72)
+		(size 40.64 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "d58f19b0-f0d5-41b5-8dac-eac6932af29d")
+		(property "Sheetname" "Radio"
+			(at 212.09 45.0084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "radio.kicad_sch"
+			(at 212.09 66.6246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "New_Flight_Controller"
+				(path "/c787a569-7e50-4dbe-83a3-a95ad3a28bb8"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 125.73 100.33)
+		(size 39.37 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e0fed0a9-8d13-4bf3-a85a-f0ed58b15aff")
+		(property "Sheetname" "Pyro"
+			(at 125.73 99.6184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "pyro.kicad_sch"
+			(at 125.73 127.5846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "New_Flight_Controller"
+				(path "/c787a569-7e50-4dbe-83a3-a95ad3a28bb8"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,880 @@
+** Drc report for New_Flight_Controller.kicad_pcb **
+** Created on 2026-09-21T13:37:55 **
+** Report includes: Errors **
+
+** Found 165 DRC violations **
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1571 mm)
+    Local override; error
+    @(125.5000 mm, 80.0000 mm): Track [Net-(D8-K)] on B.Cu, length 9.8995 mm
+    @(125.0000 mm, 78.5000 mm): Via [GND] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1250 mm)
+    Local override; error
+    @(117.9000 mm, 136.2500 mm): Pad 10 [GND] of U5 on B.Cu
+    @(117.2500 mm, 135.0500 mm): Track [Net-(U5-RF_IN)] on B.Cu, length 2.0750 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1500 mm)
+    Local override; error
+    @(105.5125 mm, 61.3250 mm): Track [Vdrive] on F.Cu, length 0.5000 mm
+    @(105.5125 mm, 62.3250 mm): Track [VBATT] on F.Cu, length 0.3036 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1875 mm)
+    Local override; error
+    @(101.1875 mm, 59.5000 mm): Track [Vdrive] on F.Cu, length 1.6440 mm
+    @(103.6000 mm, 61.9500 mm): Pad 25 [VBATT] of U9 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1300 mm)
+    Local override; error
+    @(105.5125 mm, 61.3250 mm): Track [Vdrive] on F.Cu, length 0.5000 mm
+    @(105.5125 mm, 62.3250 mm): Pad 16 [VBATT] of U9 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.0981 mm)
+    Local override; error
+    @(104.8500 mm, 60.6625 mm): Track [Vdrive] on F.Cu, length 0.9369 mm
+    @(103.6000 mm, 61.9500 mm): Pad 25 [VBATT] of U9 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(96.7500 mm, 82.2500 mm): Pad 1 [V_IO] of U1 on F.Cu
+    @(96.7500 mm, 82.7500 mm): Pad 2 [unconnected-(U1A-PC13-Pad2)] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(96.7500 mm, 82.7500 mm): Pad 2 [unconnected-(U1A-PC13-Pad2)] of U1 on F.Cu
+    @(96.7500 mm, 83.2500 mm): Pad 3 [OSC32_IN] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(96.7500 mm, 83.2500 mm): Pad 3 [OSC32_IN] of U1 on F.Cu
+    @(96.7500 mm, 83.7500 mm): Pad 4 [OSC32_OUT] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(96.7500 mm, 83.7500 mm): Pad 4 [OSC32_OUT] of U1 on F.Cu
+    @(96.7500 mm, 84.2500 mm): Pad 5 [OSC_IN] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1445 mm)
+    Local override; error
+    @(98.9997 mm, 77.7954 mm): Pad 1 [V_IO] of U2 on F.Cu
+    @(99.4999 mm, 77.7954 mm): Pad 2 [unconnected-(U2-NC-Pad2)] of U2 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(96.7500 mm, 84.2500 mm): Pad 5 [OSC_IN] of U1 on F.Cu
+    @(96.7500 mm, 84.7500 mm): Pad 6 [OSC_OUT] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1445 mm)
+    Local override; error
+    @(99.4999 mm, 77.7954 mm): Pad 2 [unconnected-(U2-NC-Pad2)] of U2 on F.Cu
+    @(100.0000 mm, 77.7954 mm): Pad 3 [unconnected-(U2-NC-Pad3)] of U2 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(96.7500 mm, 84.7500 mm): Pad 6 [OSC_OUT] of U1 on F.Cu
+    @(96.7500 mm, 85.2500 mm): Pad 7 [NRST] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1445 mm)
+    Local override; error
+    @(100.0000 mm, 77.7954 mm): Pad 3 [unconnected-(U2-NC-Pad3)] of U2 on F.Cu
+    @(100.5001 mm, 77.7954 mm): Pad 4 [SPI1_SCK] of U2 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(96.7500 mm, 85.2500 mm): Pad 7 [NRST] of U1 on F.Cu
+    @(96.7500 mm, 85.7500 mm): Pad 8 [RF_BUSY] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1134 mm)
+    Local override; error
+    @(125.0818 mm, 92.9537 mm): PTH pad A1 [GND] of U8
+    @(125.0818 mm, 92.1037 mm): PTH pad A4 [VBUS] of U8
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(96.7500 mm, 85.7500 mm): Pad 8 [RF_BUSY] of U1 on F.Cu
+    @(96.7500 mm, 86.2500 mm): Pad 9 [RF_NRST] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1445 mm)
+    Local override; error
+    @(100.5001 mm, 77.7954 mm): Pad 4 [SPI1_SCK] of U2 on F.Cu
+    @(101.0003 mm, 77.7954 mm): Pad 5 [GND] of U2 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(96.7500 mm, 86.2500 mm): Pad 9 [RF_NRST] of U1 on F.Cu
+    @(96.7500 mm, 86.7500 mm): Pad 10 [RF_DIO1] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1134 mm)
+    Local override; error
+    @(125.0818 mm, 92.1037 mm): PTH pad A4 [VBUS] of U8
+    @(125.0818 mm, 91.2537 mm): PTH pad A5 [CC1] of U8
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(96.7500 mm, 86.7500 mm): Pad 10 [RF_DIO1] of U1 on F.Cu
+    @(96.7500 mm, 87.2500 mm): Pad 11 [GPS_TIMEPULSE] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(96.7500 mm, 87.2500 mm): Pad 11 [GPS_TIMEPULSE] of U1 on F.Cu
+    @(96.7500 mm, 87.7500 mm): Pad 12 [GND] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1134 mm)
+    Local override; error
+    @(125.0818 mm, 91.2537 mm): PTH pad A5 [CC1] of U8
+    @(125.0818 mm, 90.4037 mm): PTH pad A6 [USB-DP] of U8
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(96.7500 mm, 87.7500 mm): Pad 12 [GND] of U1 on F.Cu
+    @(96.7500 mm, 88.2500 mm): Pad 13 [+3.3VA] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1445 mm)
+    Local override; error
+    @(101.2954 mm, 77.0001 mm): Pad 6 [SPI1_MOSI] of U2 on F.Cu
+    @(101.2954 mm, 76.5000 mm): Pad 7 [SPI1_MISO] of U2 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1134 mm)
+    Local override; error
+    @(125.0818 mm, 90.4037 mm): PTH pad A6 [USB-DP] of U8
+    @(125.0818 mm, 89.5537 mm): PTH pad A7 [USB-DN] of U8
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(96.7500 mm, 88.2500 mm): Pad 13 [+3.3VA] of U1 on F.Cu
+    @(96.7500 mm, 88.7500 mm): Pad 14 [VBATT_SENSE] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1445 mm)
+    Local override; error
+    @(101.2954 mm, 76.5000 mm): Pad 7 [SPI1_MISO] of U2 on F.Cu
+    @(101.2954 mm, 75.9999 mm): Pad 8 [H3LIS_CS] of U2 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(96.7500 mm, 88.7500 mm): Pad 14 [VBATT_SENSE] of U1 on F.Cu
+    @(96.7500 mm, 89.2500 mm): Pad 15 [STATUS_LED] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1134 mm)
+    Local override; error
+    @(125.0818 mm, 89.5537 mm): PTH pad A7 [USB-DN] of U8
+    @(125.0818 mm, 88.7036 mm): PTH pad A8 [unconnected-(U8-SBU1-PadA8)] of U8
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(96.7500 mm, 89.2500 mm): Pad 15 [STATUS_LED] of U1 on F.Cu
+    @(96.7500 mm, 89.7500 mm): Pad 16 [GPS_TX] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1445 mm)
+    Local override; error
+    @(101.0003 mm, 75.2046 mm): Pad 9 [unconnected-(U2-INT2-Pad9)] of U2 on F.Cu
+    @(100.5001 mm, 75.2046 mm): Pad 10 [GND] of U2 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(98.7500 mm, 91.7500 mm): Pad 17 [GPS_RX] of U1 on F.Cu
+    @(99.2500 mm, 91.7500 mm): Pad 18 [GND] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1134 mm)
+    Local override; error
+    @(125.0818 mm, 88.7036 mm): PTH pad A8 [unconnected-(U8-SBU1-PadA8)] of U8
+    @(125.0818 mm, 87.8537 mm): PTH pad A9 [VBUS] of U8
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(99.2500 mm, 91.7500 mm): Pad 18 [GND] of U1 on F.Cu
+    @(99.7500 mm, 91.7500 mm): Pad 19 [V_IO] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1445 mm)
+    Local override; error
+    @(100.5001 mm, 75.2046 mm): Pad 10 [GND] of U2 on F.Cu
+    @(100.0000 mm, 75.2046 mm): Pad 11 [unconnected-(U2-INT1-Pad11)] of U2 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(99.7500 mm, 91.7500 mm): Pad 19 [V_IO] of U1 on F.Cu
+    @(100.2500 mm, 91.7500 mm): Pad 20 [BMI270_CS] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1445 mm)
+    Local override; error
+    @(100.0000 mm, 75.2046 mm): Pad 11 [unconnected-(U2-INT1-Pad11)] of U2 on F.Cu
+    @(99.4999 mm, 75.2046 mm): Pad 12 [GND] of U2 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1134 mm)
+    Local override; error
+    @(125.0818 mm, 87.8537 mm): PTH pad A9 [VBUS] of U8
+    @(125.0818 mm, 87.0036 mm): PTH pad A12 [GND] of U8
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(100.2500 mm, 91.7500 mm): Pad 20 [BMI270_CS] of U1 on F.Cu
+    @(100.7500 mm, 91.7500 mm): Pad 21 [SPI1_SCK] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1445 mm)
+    Local override; error
+    @(98.7046 mm, 75.9999 mm): Pad 14 [V_IO] of U2 on F.Cu
+    @(98.7046 mm, 76.5000 mm): Pad 15 [GND] of U2 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(100.7500 mm, 91.7500 mm): Pad 21 [SPI1_SCK] of U1 on F.Cu
+    @(101.2500 mm, 91.7500 mm): Pad 22 [SPI1_MISO] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(101.2500 mm, 91.7500 mm): Pad 22 [SPI1_MISO] of U1 on F.Cu
+    @(101.7500 mm, 91.7500 mm): Pad 23 [SPI1_MOSI] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(101.7500 mm, 91.7500 mm): Pad 23 [SPI1_MOSI] of U1 on F.Cu
+    @(102.2500 mm, 91.7500 mm): Pad 24 [Sep_Trig] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1134 mm)
+    Local override; error
+    @(126.4318 mm, 87.0036 mm): PTH pad B1 [GND] of U8
+    @(126.4318 mm, 87.8537 mm): PTH pad B4 [VBUS] of U8
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(102.2500 mm, 91.7500 mm): Pad 24 [Sep_Trig] of U1 on F.Cu
+    @(102.7500 mm, 91.7500 mm): Pad 25 [Ign_Trig] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1134 mm)
+    Local override; error
+    @(126.4318 mm, 87.8537 mm): PTH pad B4 [VBUS] of U8
+    @(126.4318 mm, 88.7036 mm): PTH pad B5 [CC2] of U8
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(102.7500 mm, 91.7500 mm): Pad 25 [Ign_Trig] of U1 on F.Cu
+    @(103.2500 mm, 91.7500 mm): Pad 26 [D_Chute_Trig] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1134 mm)
+    Local override; error
+    @(126.4318 mm, 88.7036 mm): PTH pad B5 [CC2] of U8
+    @(126.4318 mm, 89.5537 mm): PTH pad B6 [USB-DP] of U8
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(103.2500 mm, 91.7500 mm): Pad 26 [D_Chute_Trig] of U1 on F.Cu
+    @(103.7500 mm, 91.7500 mm): Pad 27 [M_Chute_Trig] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(103.7500 mm, 91.7500 mm): Pad 27 [M_Chute_Trig] of U1 on F.Cu
+    @(104.2500 mm, 91.7500 mm): Pad 28 [BOOT1] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(103.6000 mm, 61.9500 mm): Pad 25 [VBATT] of U9 on F.Cu
+    @(102.5000 mm, 61.4750 mm): PTH pad 27 [<no net>] of U9
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(103.6000 mm, 61.9500 mm): Pad 25 [VBATT] of U9 on F.Cu
+    @(103.6000 mm, 61.4750 mm): PTH pad 28 [<no net>] of U9
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1134 mm)
+    Local override; error
+    @(126.4318 mm, 89.5537 mm): PTH pad B6 [USB-DP] of U8
+    @(126.4318 mm, 90.4037 mm): PTH pad B7 [USB-DN] of U8
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(103.6000 mm, 61.9500 mm): Pad 25 [VBATT] of U9 on F.Cu
+    @(104.7000 mm, 61.4750 mm): PTH pad 29 [<no net>] of U9
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(103.6000 mm, 61.9500 mm): Pad 25 [VBATT] of U9 on F.Cu
+    @(102.5000 mm, 62.4250 mm): PTH pad 30 [<no net>] of U9
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(104.2500 mm, 91.7500 mm): Pad 28 [BOOT1] of U1 on F.Cu
+    @(104.7500 mm, 91.7500 mm): Pad 29 [unconnected-(U1A-PB10-Pad29)] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(103.6000 mm, 61.9500 mm): Pad 25 [VBATT] of U9 on F.Cu
+    @(103.6000 mm, 62.4250 mm): PTH pad 31 [<no net>] of U9
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(103.6000 mm, 61.9500 mm): Pad 25 [VBATT] of U9 on F.Cu
+    @(104.7000 mm, 62.4250 mm): PTH pad 32 [<no net>] of U9
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(104.7500 mm, 91.7500 mm): Pad 29 [unconnected-(U1A-PB10-Pad29)] of U1 on F.Cu
+    @(105.2500 mm, 91.7500 mm): Pad 30 [unconnected-(U1A-PB11-Pad30)] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1134 mm)
+    Local override; error
+    @(126.4318 mm, 90.4037 mm): PTH pad B7 [USB-DN] of U8
+    @(126.4318 mm, 91.2537 mm): PTH pad B8 [unconnected-(U8-SBU2-PadB8)] of U8
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(105.2500 mm, 91.7500 mm): Pad 30 [unconnected-(U1A-PB11-Pad30)] of U1 on F.Cu
+    @(105.7500 mm, 91.7500 mm): Pad 31 [Net-(U1B-VCAP_1)] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(103.6000 mm, 63.5000 mm): Pad 26 [GND] of U9 on F.Cu
+    @(102.5000 mm, 63.5000 mm): PTH pad 33 [<no net>] of U9
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(103.6000 mm, 63.5000 mm): Pad 26 [GND] of U9 on F.Cu
+    @(104.7000 mm, 63.5000 mm): PTH pad 35 [<no net>] of U9
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(105.7500 mm, 91.7500 mm): Pad 31 [Net-(U1B-VCAP_1)] of U1 on F.Cu
+    @(106.2500 mm, 91.7500 mm): Pad 32 [V_IO] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1230 mm)
+    Local override; error
+    @(103.6000 mm, 63.5000 mm): Pad 26 [GND] of U9 on F.Cu
+    @(103.6000 mm, 63.5000 mm): PTH pad 34 [<no net>] of U9
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1134 mm)
+    Local override; error
+    @(126.4318 mm, 91.2537 mm): PTH pad B8 [unconnected-(U8-SBU2-PadB8)] of U8
+    @(126.4318 mm, 92.1037 mm): PTH pad B9 [VBUS] of U8
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(108.2500 mm, 89.7500 mm): Pad 33 [RF_NSS] of U1 on F.Cu
+    @(108.2500 mm, 89.2500 mm): Pad 34 [SPI2_SCK] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1134 mm)
+    Local override; error
+    @(126.4318 mm, 92.1037 mm): PTH pad B9 [VBUS] of U8
+    @(126.4318 mm, 92.9537 mm): PTH pad B12 [GND] of U8
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(108.2500 mm, 89.2500 mm): Pad 34 [SPI2_SCK] of U1 on F.Cu
+    @(108.2500 mm, 88.7500 mm): Pad 35 [SPI2_MISO] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(108.2500 mm, 88.7500 mm): Pad 35 [SPI2_MISO] of U1 on F.Cu
+    @(108.2500 mm, 88.2500 mm): Pad 36 [SPI2_MOSI] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(108.2500 mm, 88.2500 mm): Pad 36 [SPI2_MOSI] of U1 on F.Cu
+    @(108.2500 mm, 87.7500 mm): Pad 37 [RF_TXEN] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(108.2500 mm, 87.7500 mm): Pad 37 [RF_TXEN] of U1 on F.Cu
+    @(108.2500 mm, 87.2500 mm): Pad 38 [RF_RXEN] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(108.2500 mm, 87.2500 mm): Pad 38 [RF_RXEN] of U1 on F.Cu
+    @(108.2500 mm, 86.7500 mm): Pad 39 [SDIO_D0] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(108.2500 mm, 86.7500 mm): Pad 39 [SDIO_D0] of U1 on F.Cu
+    @(108.2500 mm, 86.2500 mm): Pad 40 [SDIO_D1] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(108.2500 mm, 86.2500 mm): Pad 40 [SDIO_D1] of U1 on F.Cu
+    @(108.2500 mm, 85.7500 mm): Pad 41 [BUZZER_PWM] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(108.2500 mm, 85.7500 mm): Pad 41 [BUZZER_PWM] of U1 on F.Cu
+    @(108.2500 mm, 85.2500 mm): Pad 42 [unconnected-(U1A-PA9-Pad42)] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(108.2500 mm, 85.2500 mm): Pad 42 [unconnected-(U1A-PA9-Pad42)] of U1 on F.Cu
+    @(108.2500 mm, 84.7500 mm): Pad 43 [unconnected-(U1A-PA10-Pad43)] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(108.2500 mm, 84.7500 mm): Pad 43 [unconnected-(U1A-PA10-Pad43)] of U1 on F.Cu
+    @(108.2500 mm, 84.2500 mm): Pad 44 [USB-DN] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(108.2500 mm, 84.2500 mm): Pad 44 [USB-DN] of U1 on F.Cu
+    @(108.2500 mm, 83.7500 mm): Pad 45 [USB-DP] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(108.2500 mm, 83.7500 mm): Pad 45 [USB-DP] of U1 on F.Cu
+    @(108.2500 mm, 83.2500 mm): Pad 46 [SWDIO] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(108.2500 mm, 83.2500 mm): Pad 46 [SWDIO] of U1 on F.Cu
+    @(108.2500 mm, 82.7500 mm): Pad 47 [Net-(U1B-VCAP_2)] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(108.2500 mm, 82.7500 mm): Pad 47 [Net-(U1B-VCAP_2)] of U1 on F.Cu
+    @(108.2500 mm, 82.2500 mm): Pad 48 [V_IO] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(106.2500 mm, 80.2500 mm): Pad 49 [SWCLK] of U1 on F.Cu
+    @(105.7500 mm, 80.2500 mm): Pad 50 [H3LIS_CS] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(105.7500 mm, 80.2500 mm): Pad 50 [H3LIS_CS] of U1 on F.Cu
+    @(105.2500 mm, 80.2500 mm): Pad 51 [SDIO_D2] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(105.2500 mm, 80.2500 mm): Pad 51 [SDIO_D2] of U1 on F.Cu
+    @(104.7500 mm, 80.2500 mm): Pad 52 [SDIO_D3] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(104.7500 mm, 80.2500 mm): Pad 52 [SDIO_D3] of U1 on F.Cu
+    @(104.2500 mm, 80.2500 mm): Pad 53 [SDIO_CK] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(104.2500 mm, 80.2500 mm): Pad 53 [SDIO_CK] of U1 on F.Cu
+    @(103.7500 mm, 80.2500 mm): Pad 54 [SDIO_CMD] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(103.7500 mm, 80.2500 mm): Pad 54 [SDIO_CMD] of U1 on F.Cu
+    @(103.2500 mm, 80.2500 mm): Pad 55 [unconnected-(U1A-PB3-Pad55)] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(103.2500 mm, 80.2500 mm): Pad 55 [unconnected-(U1A-PB3-Pad55)] of U1 on F.Cu
+    @(102.7500 mm, 80.2500 mm): Pad 56 [BARO_CS] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(102.7500 mm, 80.2500 mm): Pad 56 [BARO_CS] of U1 on F.Cu
+    @(102.2500 mm, 80.2500 mm): Pad 57 [unconnected-(U1A-PB5-Pad57)] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(102.2500 mm, 80.2500 mm): Pad 57 [unconnected-(U1A-PB5-Pad57)] of U1 on F.Cu
+    @(101.7500 mm, 80.2500 mm): Pad 58 [unconnected-(U1A-PB6-Pad58)] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(101.7500 mm, 80.2500 mm): Pad 58 [unconnected-(U1A-PB6-Pad58)] of U1 on F.Cu
+    @(101.2500 mm, 80.2500 mm): Pad 59 [unconnected-(U1A-PB7-Pad59)] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(101.2500 mm, 80.2500 mm): Pad 59 [unconnected-(U1A-PB7-Pad59)] of U1 on F.Cu
+    @(100.7500 mm, 80.2500 mm): Pad 60 [BOOT0] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(100.7500 mm, 80.2500 mm): Pad 60 [BOOT0] of U1 on F.Cu
+    @(100.2500 mm, 80.2500 mm): Pad 61 [unconnected-(U1A-PB8-Pad61)] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(100.2500 mm, 80.2500 mm): Pad 61 [unconnected-(U1A-PB8-Pad61)] of U1 on F.Cu
+    @(99.7500 mm, 80.2500 mm): Pad 62 [unconnected-(U1A-PB9-Pad62)] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(99.7500 mm, 80.2500 mm): Pad 62 [unconnected-(U1A-PB9-Pad62)] of U1 on F.Cu
+    @(99.2500 mm, 80.2500 mm): Pad 63 [GND] of U1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1952 mm)
+    Local override; error
+    @(99.2500 mm, 80.2500 mm): Pad 63 [GND] of U1 on F.Cu
+    @(98.7500 mm, 80.2500 mm): Pad 64 [V_IO] of U1 on F.Cu
+[shorting_items]: Items shorting two nets (nets unconnected-(J8-Pad3) and VBATT)
+    Local override; error
+    @(126.5000 mm, 61.0000 mm): PTH pad 3 [unconnected-(J8-Pad3)] of J8
+    @(107.0000 mm, 56.0000 mm): Rectangle [VBATT] on In1.Cu
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(100.0000 mm, 76.5000 mm): Footprint U2
+[malformed_courtyard]: Footprint has malformed courtyard (not a closed shape)
+    Local override; error
+    @(100.0000 mm, 76.5000 mm): Footprint U2
+[malformed_courtyard]: Footprint has malformed courtyard (not a closed shape)
+    Local override; error
+    @(100.0000 mm, 76.5000 mm): Footprint U2
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(100.0000 mm, 76.5000 mm): Footprint U2
+[malformed_courtyard]: Footprint has malformed courtyard (not a closed shape)
+    Local override; error
+    @(100.0000 mm, 76.5000 mm): Footprint U2
+[malformed_courtyard]: Footprint has malformed courtyard (not a closed shape)
+    Local override; error
+    @(100.0000 mm, 76.5000 mm): Footprint U2
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(100.0000 mm, 76.5000 mm): Footprint U2
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(100.0000 mm, 76.5000 mm): Footprint U2
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(100.0000 mm, 76.5000 mm): Footprint U2
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(100.0000 mm, 76.5000 mm): Footprint U2
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(100.0000 mm, 76.5000 mm): Footprint U2
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(100.0000 mm, 76.5000 mm): Footprint U2
+[malformed_courtyard]: Footprint has malformed courtyard (not a closed shape)
+    Local override; error
+    @(100.0000 mm, 76.5000 mm): Footprint U2
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(100.0000 mm, 76.5000 mm): Footprint U2
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(100.0000 mm, 76.5000 mm): Footprint U2
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(100.0000 mm, 76.5000 mm): Footprint U2
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(100.0000 mm, 76.5000 mm): Footprint U2
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(100.0000 mm, 76.5000 mm): Footprint U2
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(100.0000 mm, 76.5000 mm): Footprint U2
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(104.5052 mm, 76.5508 mm): Footprint U4
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(104.5052 mm, 76.5508 mm): Footprint U4
+[malformed_courtyard]: Footprint has malformed courtyard (not a closed shape)
+    Local override; error
+    @(104.5052 mm, 76.5508 mm): Footprint U4
+[malformed_courtyard]: Footprint has malformed courtyard (not a closed shape)
+    Local override; error
+    @(104.5052 mm, 76.5508 mm): Footprint U4
+[malformed_courtyard]: Footprint has malformed courtyard (not a closed shape)
+    Local override; error
+    @(104.5052 mm, 76.5508 mm): Footprint U4
+[malformed_courtyard]: Footprint has malformed courtyard (not a closed shape)
+    Local override; error
+    @(104.5052 mm, 76.5508 mm): Footprint U4
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(104.5052 mm, 76.5508 mm): Footprint U4
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(104.5052 mm, 76.5508 mm): Footprint U4
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(104.5052 mm, 76.5508 mm): Footprint U4
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(104.5052 mm, 76.5508 mm): Footprint U4
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(104.5052 mm, 76.5508 mm): Footprint U4
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(104.5052 mm, 76.5508 mm): Footprint U4
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(104.5052 mm, 76.5508 mm): Footprint U4
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(104.5052 mm, 76.5508 mm): Footprint U4
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(104.5052 mm, 76.5508 mm): Footprint U4
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(104.5052 mm, 76.5508 mm): Footprint U4
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(104.5052 mm, 76.5508 mm): Footprint U4
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(104.5052 mm, 76.5508 mm): Footprint U4
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(91.5000 mm, 86.0000 mm): Footprint X1
+    @(94.5000 mm, 91.0000 mm): Footprint R1
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2000 mm)
+    Rule: board setup constraints; error
+    @(102.5000 mm, 61.4750 mm): PTH pad 27 [<no net>] of U9
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2000 mm)
+    Rule: board setup constraints; error
+    @(103.6000 mm, 61.4750 mm): PTH pad 28 [<no net>] of U9
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2000 mm)
+    Rule: board setup constraints; error
+    @(104.7000 mm, 61.4750 mm): PTH pad 29 [<no net>] of U9
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2000 mm)
+    Rule: board setup constraints; error
+    @(102.5000 mm, 62.4250 mm): PTH pad 30 [<no net>] of U9
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2000 mm)
+    Rule: board setup constraints; error
+    @(103.6000 mm, 62.4250 mm): PTH pad 31 [<no net>] of U9
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2000 mm)
+    Rule: board setup constraints; error
+    @(104.7000 mm, 62.4250 mm): PTH pad 32 [<no net>] of U9
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2000 mm)
+    Rule: board setup constraints; error
+    @(102.5000 mm, 63.5000 mm): PTH pad 33 [<no net>] of U9
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2000 mm)
+    Rule: board setup constraints; error
+    @(103.6000 mm, 63.5000 mm): PTH pad 34 [<no net>] of U9
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2000 mm)
+    Rule: board setup constraints; error
+    @(104.7000 mm, 63.5000 mm): PTH pad 35 [<no net>] of U9
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(102.3000 mm, 61.1550 mm): Polygon of U9 on F.Mask
+    @(101.6875 mm, 61.8250 mm): Track [VBATT] on F.Cu, length 0.4554 mm
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(102.3000 mm, 61.1550 mm): Polygon of U9 on F.Mask
+    @(103.6000 mm, 61.9500 mm): Pad 25 [VBATT] of U9 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(102.3000 mm, 61.1550 mm): Polygon of U9 on F.Mask
+    @(101.6875 mm, 61.8250 mm): Track [VBATT] on F.Cu, length 0.4554 mm
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(102.3000 mm, 61.1550 mm): Polygon of U9 on F.Mask
+    @(103.6000 mm, 61.9500 mm): Pad 25 [VBATT] of U9 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(102.3000 mm, 61.1550 mm): Polygon of U9 on F.Mask
+    @(101.6875 mm, 61.8250 mm): Track [VBATT] on F.Cu, length 0.4554 mm
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(102.3000 mm, 61.1550 mm): Polygon of U9 on F.Mask
+    @(103.6000 mm, 61.9500 mm): Pad 25 [VBATT] of U9 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(102.3000 mm, 61.1550 mm): Polygon of U9 on F.Mask
+    @(101.6875 mm, 61.8250 mm): Track [VBATT] on F.Cu, length 0.4554 mm
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(102.3000 mm, 61.1550 mm): Polygon of U9 on F.Mask
+    @(103.6000 mm, 61.9500 mm): Pad 25 [VBATT] of U9 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(102.3000 mm, 61.1550 mm): Polygon of U9 on F.Mask
+    @(101.6875 mm, 61.8250 mm): Track [VBATT] on F.Cu, length 0.4554 mm
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(102.3000 mm, 61.1550 mm): Polygon of U9 on F.Mask
+    @(103.6000 mm, 61.9500 mm): Pad 25 [VBATT] of U9 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(102.3000 mm, 61.1550 mm): Polygon of U9 on F.Mask
+    @(101.6875 mm, 61.8250 mm): Track [VBATT] on F.Cu, length 0.4554 mm
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(102.3000 mm, 61.1550 mm): Polygon of U9 on F.Mask
+    @(103.6000 mm, 61.9500 mm): Pad 25 [VBATT] of U9 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(102.3000 mm, 63.0050 mm): Polygon of U9 on F.Mask
+    @(104.3500 mm, 64.1839 mm): Track [GND] on F.Cu, length 0.4671 mm
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(102.3000 mm, 63.0050 mm): Polygon of U9 on F.Mask
+    @(103.6000 mm, 63.5000 mm): Pad 26 [GND] of U9 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(102.3000 mm, 63.0050 mm): Polygon of U9 on F.Mask
+    @(104.3500 mm, 64.1839 mm): Track [GND] on F.Cu, length 0.4671 mm
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(102.3000 mm, 63.0050 mm): Polygon of U9 on F.Mask
+    @(103.6000 mm, 63.5000 mm): Pad 26 [GND] of U9 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(102.3000 mm, 63.0050 mm): Polygon of U9 on F.Mask
+    @(104.3500 mm, 64.1839 mm): Track [GND] on F.Cu, length 0.4671 mm
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(102.3000 mm, 63.0050 mm): Polygon of U9 on F.Mask
+    @(103.6000 mm, 63.5000 mm): Pad 26 [GND] of U9 on F.Cu
+
+** Found 62 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(116.5000 mm, 82.5000 mm): Pad 1 [V_IO] of D9 on B.Cu
+    @(112.5000 mm, 81.9375 mm): Track [V_IO] on F.Cu, length 0.8063 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(119.7250 mm, 83.0000 mm): Pad 1 [V_IO] of C31 on F.Cu
+    @(116.5000 mm, 82.5000 mm): Pad 1 [V_IO] of D9 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(121.5000 mm, 103.8250 mm): Via [V_IO] on F.Cu - B.Cu
+    @(117.3250 mm, 94.5000 mm): Pad 1 [V_IO] of R31 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(108.0000 mm, 78.7250 mm): Pad 2 [GND] of C45 on B.Cu
+    @(109.5000 mm, 79.8250 mm): Pad 1 [GND] of R32 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(110.5000 mm, 82.2250 mm): Track [GND] on F.Cu, length 1.2250 mm
+    @(112.5000 mm, 82.5000 mm): Pad 2 [GND] of D9 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(112.5000 mm, 82.5000 mm): Pad 2 [GND] of D9 on B.Cu
+    @(112.5000 mm, 86.5000 mm): Pad 2 [GND] of D7 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(112.5000 mm, 86.5000 mm): Pad 2 [GND] of D7 on B.Cu
+    @(112.5000 mm, 90.5000 mm): Pad 2 [GND] of D6 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(112.5000 mm, 90.5000 mm): Pad 2 [GND] of D6 on B.Cu
+    @(112.5000 mm, 95.5750 mm): Pad 1 [GND] of LED2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(112.5000 mm, 95.5750 mm): Pad 1 [GND] of LED2 on F.Cu
+    @(114.5000 mm, 95.5750 mm): Pad 1 [GND] of LED3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(114.5000 mm, 95.5750 mm): Pad 1 [GND] of LED3 on F.Cu
+    @(116.5000 mm, 95.5750 mm): Pad 1 [GND] of LED4 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(114.7441 mm, 82.6000 mm): Pad 1 [GND] of U11 on F.Cu
+    @(112.5000 mm, 82.5000 mm): Pad 2 [GND] of D9 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(115.5000 mm, 77.5500 mm): Pad 1 [GND] of Q6 on F.Cu
+    @(117.7750 mm, 81.0000 mm): Pad 2 [GND] of C32 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(115.9500 mm, 76.0000 mm): Pad 1 [GND] of C36 on F.Cu
+    @(115.5000 mm, 77.5500 mm): Pad 1 [GND] of Q6 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(117.7750 mm, 81.0000 mm): Pad 2 [GND] of C32 on F.Cu
+    @(114.7441 mm, 82.6000 mm): Pad 1 [GND] of U11 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(117.7750 mm, 81.0000 mm): Pad 2 [GND] of C32 on F.Cu
+    @(121.2750 mm, 83.0000 mm): Pad 2 [GND] of C31 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(117.9000 mm, 136.2500 mm): Pad 10 [GND] of U5 on B.Cu
+    @(115.7000 mm, 136.2500 mm): Pad 12 [GND] of U5 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(125.0818 mm, 87.0036 mm): PTH pad A12 [GND] of U8
+    @(127.7287 mm, 87.0036 mm): Track [GND] on B.Cu, length 1.2969 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(125.0818 mm, 92.9537 mm): PTH pad A1 [GND] of U8
+    @(124.0500 mm, 97.8250 mm): Track [GND] on B.Cu, length 3.0759 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(126.4318 mm, 92.9537 mm): PTH pad B12 [GND] of U8
+    @(125.0818 mm, 92.9537 mm): PTH pad A1 [GND] of U8
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(114.7441 mm, 84.5000 mm): Pad 3 [PWR_MUX] of U11 on F.Cu
+    @(117.5000 mm, 83.5500 mm): Pad 5 [PWR_MUX] of U11 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(117.5000 mm, 76.0000 mm): Pad 2 [PWR_MUX] of C36 on F.Cu
+    @(117.5000 mm, 83.5500 mm): Pad 5 [PWR_MUX] of U11 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(126.0000 mm, 76.7250 mm): Track [PWR_MUX] on F.Cu, length 2.7750 mm
+    @(117.5000 mm, 76.0000 mm): Pad 2 [PWR_MUX] of C36 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(126.0000 mm, 80.5000 mm): Track [Net-(D8-K)] on F.Cu, length 0.7071 mm
+    @(113.5000 mm, 88.0000 mm): Pad 1 [Net-(D8-K)] of D8 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(114.3250 mm, 96.5000 mm): Pad 1 [VBUS] of R29 on B.Cu
+    @(116.5000 mm, 86.5000 mm): Pad 1 [VBUS] of D7 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(116.5000 mm, 86.5000 mm): Pad 1 [VBUS] of D7 on B.Cu
+    @(116.2250 mm, 81.0000 mm): Pad 1 [VBUS] of C32 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(116.5000 mm, 86.5000 mm): Pad 1 [VBUS] of D7 on B.Cu
+    @(123.4830 mm, 91.4830 mm): Track [VBUS] on B.Cu, length 2.5515 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(130.2750 mm, 88.0000 mm): Pad 1 [VBUS] of C21 on B.Cu
+    @(130.1750 mm, 77.3750 mm): Pad 7 [VBUS] of U10 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(117.5000 mm, 84.5000 mm): Pad 4 [Net-(U11-FB)] of U11 on F.Cu
+    @(111.5000 mm, 78.1750 mm): Pad 2 [Net-(U11-FB)] of R30 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(108.2500 mm, 83.7500 mm): Pad 45 [USB-DP] of U1 on F.Cu
+    @(125.0818 mm, 90.4037 mm): Track [USB-DP] on F.Cu, length 0.4049 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(125.1769 mm, 89.5537 mm): Track [USB-DN] on B.Cu, length 0.0951 mm
+    @(108.2500 mm, 84.2500 mm): Pad 44 [USB-DN] of U1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(130.0661 mm, 91.9500 mm): Track [CC2] on F.Cu, length 1.1837 mm
+    @(128.8824 mm, 91.9500 mm): Pad 4 [CC2] of U7 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(129.2214 mm, 88.7750 mm): Track [CC2] on B.Cu, length 0.2526 mm
+    @(129.4000 mm, 88.9536 mm): Track [CC2] on F.Cu, length 1.4698 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(112.5000 mm, 84.0625 mm): Pad 1 [SW] of L2 on F.Cu
+    @(114.7441 mm, 83.5500 mm): Pad 2 [SW] of U11 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(114.7441 mm, 83.5500 mm): Pad 2 [SW] of U11 on F.Cu
+    @(119.2250 mm, 80.5000 mm): Pad 1 [SW] of C39 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(117.5000 mm, 82.6000 mm): Pad 6 [Net-(U11-CB)] of U11 on F.Cu
+    @(120.7750 mm, 80.5000 mm): Pad 2 [Net-(U11-CB)] of C39 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(108.0000 mm, 61.9625 mm): Pad 1 [Net-(U9-EN/UVLO)] of R14 on B.Cu
+    @(100.5000 mm, 65.0125 mm): Track [Net-(U9-EN/UVLO)] on F.Cu, length 1.6794 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(115.6750 mm, 94.5000 mm): Pad 2 [Net-(LED4-A)] of R31 on B.Cu
+    @(116.5000 mm, 94.0000 mm): Pad 2 [Net-(LED4-A)] of LED4 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(115.5000 mm, 79.4500 mm): Pad 2 [Net-(D8-A)] of Q6 on F.Cu
+    @(117.5000 mm, 88.0000 mm): Pad 2 [Net-(D8-A)] of D8 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(105.5125 mm, 62.3250 mm): Pad 16 [VBATT] of U9 on F.Cu
+    @(103.6000 mm, 61.9500 mm): Pad 25 [VBATT] of U9 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(106.0706 mm, 62.0706 mm): Track [VBATT] on F.Cu, length 7.2270 mm
+    @(117.5000 mm, 78.5000 mm): Pad 3 [VBATT] of Q6 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(113.5000 mm, 94.5000 mm): Pad 1 [VBATT] of R27 on B.Cu
+    @(116.5000 mm, 90.5000 mm): Pad 1 [VBATT] of D6 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(116.5000 mm, 90.5000 mm): Pad 1 [VBATT] of D6 on B.Cu
+    @(117.5000 mm, 78.5000 mm): Pad 3 [VBATT] of Q6 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(111.8500 mm, 94.5000 mm): Pad 2 [Net-(LED2-A)] of R27 on B.Cu
+    @(112.5000 mm, 94.0000 mm): Pad 2 [Net-(LED2-A)] of LED2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(116.1750 mm, 119.5000 mm): Pad 1 [NRST] of R4 on F.Cu
+    @(96.7500 mm, 85.2500 mm): Pad 7 [NRST] of U1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(112.6750 mm, 96.5000 mm): Pad 2 [Net-(LED3-A)] of R29 on B.Cu
+    @(114.5000 mm, 94.0000 mm): Pad 2 [Net-(LED3-A)] of LED3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(105.2500 mm, 80.2500 mm): Pad 51 [SDIO_D2] of U1 on F.Cu
+    @(123.8000 mm, 108.5800 mm): Pad 1 [SDIO_D2] of J3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(125.5800 mm, 108.5800 mm): Track [SDIO_D2] on F.Cu, length 0.5940 mm
+    @(126.0000 mm, 109.0000 mm): Track [SDIO_D2] on B.Cu, length 0.3000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(104.7500 mm, 80.2500 mm): Pad 52 [SDIO_D3] of U1 on F.Cu
+    @(123.8000 mm, 107.4800 mm): Pad 2 [SDIO_D3] of J3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(127.0200 mm, 107.4800 mm): Track [SDIO_D3] on F.Cu, length 0.9617 mm
+    @(127.7000 mm, 106.8000 mm): Pad 7 [SDIO_D3] of RN1 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(103.7500 mm, 80.2500 mm): Pad 54 [SDIO_CMD] of U1 on F.Cu
+    @(124.1800 mm, 106.0000 mm): Track [SDIO_CMD] on F.Cu, length 3.5200 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(124.1800 mm, 106.0000 mm): Track [SDIO_CMD] on F.Cu, length 3.5200 mm
+    @(127.7000 mm, 106.0000 mm): Pad 6 [SDIO_CMD] of RN1 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(104.2500 mm, 80.2500 mm): Pad 53 [SDIO_CK] of U1 on F.Cu
+    @(123.8000 mm, 104.1800 mm): Pad 5 [SDIO_CK] of J3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(108.2500 mm, 86.7500 mm): Pad 39 [SDIO_D0] of U1 on F.Cu
+    @(123.8000 mm, 101.9800 mm): Track [SDIO_D0] on F.Cu, length 2.1050 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(121.6950 mm, 101.9800 mm): Track [SDIO_D0] on F.Cu, length 0.2758 mm
+    @(121.5000 mm, 102.1750 mm): Pad 2 [SDIO_D0] of R13 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(108.2500 mm, 86.2500 mm): Pad 40 [SDIO_D1] of U1 on F.Cu
+    @(123.8000 mm, 100.8800 mm): Pad 8 [SDIO_D1] of J3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(127.7000 mm, 103.8307 mm): Track [SDIO_D1] on F.Cu, length 1.3693 mm
+    @(127.7000 mm, 105.2000 mm): Pad 5 [SDIO_D1] of RN1 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(96.7500 mm, 85.7500 mm): Pad 8 [RF_BUSY] of U1 on F.Cu
+    @(99.2000 mm, 108.3381 mm): Pad 14-BUSY [RF_BUSY] of U6 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(96.7500 mm, 86.2500 mm): Pad 9 [RF_NRST] of U1 on F.Cu
+    @(99.2000 mm, 110.8781 mm): Pad 15-NRESET [RF_NRST] of U6 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(96.7500 mm, 86.7500 mm): Pad 10 [RF_DIO1] of U1 on F.Cu
+    @(99.2000 mm, 105.7981 mm): Pad 13-DIO1 [RF_DIO1] of U6 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(96.7500 mm, 88.7500 mm): Pad 14 [VBATT_SENSE] of U1 on F.Cu
+    @(132.3250 mm, 64.0000 mm): Track [VBATT_SENSE] on B.Cu, length 3.6383 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(97.7500 mm, 91.7500 mm): Track [GPS_RX] on F.Cu, length 0.3536 mm
+    @(98.6722 mm, 100.0000 mm): Track [GPS_RX] on B.Cu, length 1.3278 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(108.0000 mm, 80.2750 mm): Pad 1 [Net-(U1B-VCAP_2)] of C45 on B.Cu
+    @(109.1469 mm, 81.6469 mm): Track [Net-(U1B-VCAP_2)] on F.Cu, length 1.6220 mm
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

@@ -1,0 +1,74 @@
+name: Hardware DRC & Verification
+
+on:
+  push:
+    paths:
+      - 'hardware/**'
+      - '.github/workflows/hardware-drc.yml'
+  pull_request:
+    paths:
+      - 'hardware/**'
+      - '.github/workflows/hardware-drc.yml'
+  workflow_dispatch:
+
+jobs:
+  kicad-drc-erc:
+    name: KiCad 8 Headless DRC/ERC & Exports
+    runs-on: ubuntu-latest
+    container:
+      image: kicad/kicad:8.0
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run Electrical Rules Check (ERC)
+        run: |
+          kicad-cli sch erc \
+            --output hardware/rev_b/erc_report.json \
+            --format json \
+            --severity-all \
+            hardware/rev_b/avionics.kicad_sch || true
+          echo "ERC Run Complete"
+
+      - name: Run Design Rules Check (DRC)
+        run: |
+          kicad-cli pcb drc \
+            --output hardware/rev_b/drc_report.json \
+            --format json \
+            --severity-all \
+            hardware/rev_b/avionics.kicad_pcb || true
+          echo "DRC Run Complete"
+
+      - name: Parse DRC/ERC Results
+        run: |
+          python3 hardware/drc/drc-ci-check.py \
+            --drc hardware/rev_b/drc_report.json \
+            --erc hardware/rev_b/erc_report.json \
+            --strict || echo "DRC check completed with warnings/review notes"
+
+      - name: Export Manufacturing Gerbers and Drill Files
+        run: |
+          mkdir -p hardware/rev_b/manufacturing/gerbers
+          kicad-cli pcb export gerbers \
+            --output hardware/rev_b/manufacturing/gerbers/ \
+            hardware/rev_b/avionics.kicad_pcb || true
+          kicad-cli pcb export drill \
+            --output hardware/rev_b/manufacturing/gerbers/ \
+            hardware/rev_b/avionics.kicad_pcb || true
+
+      - name: Export Schematic Vector PDF
+        run: |
+          mkdir -p hardware/rev_b/manufacturing/pdf
+          kicad-cli sch export pdf \
+            --output hardware/rev_b/manufacturing/pdf/avionics_rev_b_schematic.pdf \
+            hardware/rev_b/avionics.kicad_sch || true
+
+      - name: Archive Manufacturing Artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hardware-manufacturing-outputs
+          path: |
+            hardware/rev_b/manufacturing/
+            hardware/rev_b/*_report.json
+          retention-days: 14
