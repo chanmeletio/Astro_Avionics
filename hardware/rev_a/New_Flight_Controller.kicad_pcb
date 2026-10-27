@@ -506,7 +506,7 @@
 				(pins "7" "6" "3" "2" "4" "1" "8" "5" "9" "11" "10" "12")
 			)
 		)
-		(attr smd dnp)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.15 -0.850001)
@@ -4966,7 +4966,7 @@
 				(pins "1" "2" "3" "6" "5" "4")
 			)
 		)
-		(attr smd dnp)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.0033 1.651)
@@ -16433,7 +16433,7 @@
 				(pins "1" "2" "3" "4")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 1.33 -1.33)
@@ -35011,15 +35011,6 @@
 		(path "/d58f19b0-f0d5-41b5-8dac-eac6932af29d/31ef92e8-5b04-40ce-a91c-55d739582515")
 		(sheetname "/Radio/")
 		(sheetfile "radio.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "12-GND" "13-DIO1" "14-BUSY" "15-NRESET" "16-MISO" "17-MOSI" "18-SCK"
-					"19-NSS" "20-GND" "21-ANT" "22-GND" "11-GND" "10-VCC" "9-VCC" "8-DIO2"
-					"7-TXEN" "6-RXEN" "5-GND" "4-GND" "3-GND" "2-GND" "1-GND"
-				)
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
