@@ -1,0 +1,58 @@
+name: Hardware Engineering Change Order (ECO)
+description: Propose an electrical, schematic, or PCB layout change
+title: "[HW ECO]: "
+labels: ["subsystem: hardware", "type: ECO"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for PCB schematic changes, component substitutions, routing updates, or revision bumps.
+  - type: dropdown
+    id: affected_board
+    attributes:
+      label: Affected Board / Revision
+      options:
+        - Flight Controller Rev A
+        - Flight Controller Rev B
+        - Ground Station Transceiver Board
+        - Breakout / Test Fixture
+    validations:
+      required: true
+  - type: dropdown
+    id: affected_sheet
+    attributes:
+      label: Affected Schematic Sheet
+      options:
+        - Top Sheet (New_Flight_Controller.kicad_sch)
+        - MCU & Clocks (mcu_1.kicad_sch)
+        - Power & Regulation (power.kicad_sch)
+        - Pyrotechnics & Recovery (pyro.kicad_sch)
+        - Sensors & IMU (sensors.kicad_sch)
+        - RF & Telemetry (radio.kicad_sch)
+        - MicroSD Logging (microsd.kicad_sch)
+        - Multiple / Entire Board
+    validations:
+      required: true
+  - type: textarea
+    id: change_reason
+    attributes:
+      label: Rationale for Change
+      description: Explain the problem, test result, or requirement necessitating this modification.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: Proposed Implementation Details
+      description: List component part numbers, pin reassignments, or routing changes proposed.
+    validations:
+      required: true
+  - type: checkboxes
+    id: impact_assessment
+    attributes:
+      label: Impact Assessment
+      options:
+        - label: Firmware pinout / GPIO remapping required
+        - label: Power budget / current consumption affected
+        - label: Mechanical enclosure / mounting clearance affected
+        - label: Bill of Materials (BOM) cost / lead-time impacted

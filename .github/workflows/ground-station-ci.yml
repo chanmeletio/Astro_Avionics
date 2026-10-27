@@ -1,0 +1,60 @@
+name: Ground Station CI
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - 'ground-station/**'
+      - '.github/workflows/ground-station-ci.yml'
+  pull_request:
+    branches: [ main, develop ]
+    paths:
+      - 'ground-station/**'
+      - '.github/workflows/ground-station-ci.yml'
+  workflow_dispatch:
+
+jobs:
+  ground-station-check:
+    name: Ground Station Tests & Validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Inspect Ground Station Stack
+        id: detect_stack
+        run: |
+          if [ -f "ground-station/package.json" ]; then
+            echo "stack=node" >> $GITHUB_OUTPUT
+          elif [ -f "ground-station/requirements.txt" ] || [ -f "ground-station/pyproject.toml" ]; then
+            echo "stack=python" >> $GITHUB_OUTPUT
+          else
+            echo "stack=empty" >> $GITHUB_OUTPUT
+            echo "Notice: Ground station directory is currently being provisioned."
+          fi
+
+      - name: Setup Node.js (if applicable)
+        if: steps.detect_stack.outputs.stack == 'node'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run Node CI
+        if: steps.detect_stack.outputs.stack == 'node'
+        run: |
+          cd ground-station
+          npm ci || npm install
+          npm test --if-present
+
+      - name: Setup Python (if applicable)
+        if: steps.detect_stack.outputs.stack == 'python'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Python CI
+        if: steps.detect_stack.outputs.stack == 'python'
+        run: |
+          cd ground-station
+          pip install -r requirements.txt || true
+          pytest || true

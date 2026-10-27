@@ -1,0 +1,40 @@
+name: Test-Stand / Flight Anomaly Report
+description: Log an anomaly observed during environmental, vacuum, bench, or test-flight operations
+title: "[ANOMALY]: "
+labels: ["type: anomaly", "priority: high"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to document unexpected telemetry, false deployment triggers, power cutouts, or communication drops during testing.
+  - type: dropdown
+    id: test_phase
+    attributes:
+      label: Test Operational Phase
+      options:
+        - Bench Hardware-in-the-Loop (HIL)
+        - Vacuum Chamber Test
+        - Vibration / Environmental Test
+        - RF Range / Field Ground Test
+        - Subscale Test Flight
+        - Full-Scale Competition Launch
+    validations:
+      required: true
+  - type: textarea
+    id: anomaly_summary
+    attributes:
+      label: Anomaly Summary
+      description: What occurred, when, and under what conditions?
+    validations:
+      required: true
+  - type: textarea
+    id: flight_data_telemetry
+    attributes:
+      label: Telemetry / Blackbox Data Link
+      description: Attach or link to microSD flash logs, ground station CSV, or logic analyzer captures.
+  - type: textarea
+    id: containment_action
+    attributes:
+      label: Immediate Containment Action Taken
+    validations:
+      required: true

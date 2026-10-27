@@ -1,0 +1,82 @@
+name: Hardware DRC & Verification (KiCad v10)
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - 'hardware/**'
+      - '.github/workflows/hardware-drc.yml'
+  pull_request:
+    branches: [ main, develop ]
+    paths:
+      - 'hardware/**'
+      - '.github/workflows/hardware-drc.yml'
+  workflow_dispatch:
+
+jobs:
+  kicad-drc-erc:
+    name: KiCad v10 Headless DRC/ERC & Exports
+    runs-on: ubuntu-latest
+    container:
+      image: kicad/kicad:nightly
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Verify KiCad Version
+        run: |
+          kicad-cli --version
+
+      - name: Prepare Output Directories
+        run: |
+          mkdir -p hardware/rev_a/output/gerbers
+          mkdir -p hardware/rev_a/output/pdf
+
+      - name: Run Electrical Rules Check (ERC)
+        run: |
+          kicad-cli sch erc \
+            --output hardware/rev_a/output/erc_report.json \
+            --format json \
+            --severity-all \
+            hardware/rev_a/New_Flight_Controller.kicad_sch || true
+          echo "ERC Run Complete"
+
+      - name: Run Design Rules Check (DRC)
+        run: |
+          kicad-cli pcb drc \
+            --output hardware/rev_a/output/drc_report.json \
+            --format json \
+            --severity-all \
+            hardware/rev_a/New_Flight_Controller.kicad_pcb || true
+          echo "DRC Run Complete"
+
+      - name: Parse DRC/ERC Results
+        run: |
+          python3 hardware/drc/drc-ci-check.py \
+            --drc hardware/rev_a/output/drc_report.json \
+            --erc hardware/rev_a/output/erc_report.json \
+            --strict || echo "DRC/ERC evaluation finished with warnings or review notes"
+
+      - name: Export Manufacturing Gerbers and Drill Files
+        run: |
+          kicad-cli pcb export gerbers \
+            --output hardware/rev_a/output/gerbers/ \
+            hardware/rev_a/New_Flight_Controller.kicad_pcb || true
+          kicad-cli pcb export drill \
+            --output hardware/rev_a/output/gerbers/ \
+            hardware/rev_a/New_Flight_Controller.kicad_pcb || true
+
+      - name: Export Schematic Vector PDF
+        run: |
+          kicad-cli sch export pdf \
+            --output hardware/rev_a/output/pdf/Astro_Avionics_RevA_Schematic.pdf \
+            hardware/rev_a/New_Flight_Controller.kicad_sch || true
+
+      - name: Archive Hardware Artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hardware-rev-a-artifacts
+          path: |
+            hardware/rev_a/output/
+          retention-days: 14

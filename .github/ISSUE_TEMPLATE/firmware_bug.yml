@@ -1,0 +1,52 @@
+name: Firmware Defect / Bug Report
+description: Report an embedded firmware bug, crash, or driver malfunction
+title: "[FW BUG]: "
+labels: ["subsystem: firmware", "type: bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Report unexpected behavior, hard faults, data corruption, or driver failures in the flight software.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Subsystem / Module
+      options:
+        - App / State Machine
+        - BSP / Board Initialization
+        - Drivers / Sensors (IMU, Baro, GPS)
+        - Drivers / Radio Telemetry
+        - Drivers / MicroSD Storage
+        - Middleware / Comms & Ringbuffers
+        - FreeRTOS / Task Scheduling
+    validations:
+      required: true
+  - type: textarea
+    id: bug_description
+    attributes:
+      label: Bug Description
+      description: Clear and concise description of what went wrong.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction_steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can this issue be reproduced on bench hardware or in SITL?
+      placeholder: |
+        1. Flash binary firmware/build/avionics.bin
+        2. Arm system via safety pin
+        3. Trigger sensor acquisition...
+    validations:
+      required: true
+  - type: textarea
+    id: expected_vs_actual
+    attributes:
+      label: Expected vs Actual Behavior
+    validations:
+      required: true
+  - type: input
+    id: commit_hash
+    attributes:
+      label: Git Commit Hash / Target Environment
+      description: Specify commit SHA or hardware board tested on.

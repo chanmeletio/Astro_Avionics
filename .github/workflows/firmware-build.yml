@@ -1,0 +1,71 @@
+name: Firmware Build & Verification
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - 'firmware/**'
+      - '.github/workflows/firmware-build.yml'
+  pull_request:
+    branches: [ main, develop ]
+    paths:
+      - 'firmware/**'
+      - '.github/workflows/firmware-build.yml'
+  workflow_dispatch:
+
+jobs:
+  firmware-build:
+    name: Cross-Compile STM32F4 Target
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Embedded ARM Toolchain & Build Utilities
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi cmake ninja-build make
+
+      - name: Check Toolchain Versions
+        run: |
+          arm-none-eabi-gcc --version
+          cmake --version
+
+      - name: Verify Firmware Build Structure
+        id: check_build
+        run: |
+          if [ -f "firmware/CMakeLists.txt" ]; then
+            echo "build_system=cmake" >> $GITHUB_OUTPUT
+          elif [ -f "firmware/Makefile" ]; then
+            echo "build_system=make" >> $GITHUB_OUTPUT
+          else
+            echo "build_system=none" >> $GITHUB_OUTPUT
+            echo "Notice: No firmware/CMakeLists.txt or Makefile committed yet. Skipping compile step."
+          fi
+
+      - name: Build with CMake (STM32 Target)
+        if: steps.check_build.outputs.build_system == 'cmake'
+        run: |
+          cmake -B firmware/build -S firmware \
+            -DCMAKE_TOOLCHAIN_FILE=cmake/arm-none-eabi.cmake \
+            -GNinja
+          cmake --build firmware/build
+          arm-none-eabi-size firmware/build/*.elf || true
+
+      - name: Build with Make
+        if: steps.check_build.outputs.build_system == 'make'
+        run: |
+          make -C firmware
+
+      - name: Archive Target Firmware Binaries
+        if: steps.check_build.outputs.build_system != 'none'
+        uses: actions/upload-artifact@v4
+        with:
+          name: avionics-firmware-binaries
+          path: |
+            firmware/build/*.elf
+            firmware/build/*.hex
+            firmware/build/*.bin
+            firmware/build/*.map
+          if-no-files-found: ignore
+          retention-days: 14
